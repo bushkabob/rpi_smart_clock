@@ -1,0 +1,2 @@
+g++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -Wno-psabi -c main.cc spotify.cc widget.cc utils.cc aclock.cc
+g++ -o main main.o spotify.o widget.o utils.o aclock.o -L../lib -lrgbmatrix -lrt -lm -lpthread -lcurl
